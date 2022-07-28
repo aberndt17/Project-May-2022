@@ -68,10 +68,8 @@
                 <section class="column small-12 medium-6 large-3">
                     <h2>Location</h2>
                     <ul>
-                        <li>Chateau Amelia</li>
-                        <li>17 Riverwatch Drive</li> 
-                        <li>Cincinnati, OH 45202</li>
-                        <li>513-555-2022</li>
+                        <p id="address"></p>
+                        
                     </ul>
                 </section>
                 <section class="column small-12 medium-6 large-3">
@@ -91,5 +89,14 @@
 
     </footer>
     <script src="javascript.js"></script>
+
+<script>
+    const addressList = ["<li>Chateau Amelia</li>","<li>17 Riverwatch Drive</li>","<li>Cincinnati, OH 45202</li>","<li>513-555-2022</li>"];
+    let text = "";
+    for (let i = 0; i < addressList.length; i++) {
+      text += addressList[i] 
+    }
+    document.getElementById("address").innerHTML = text;
+    </script>
 </body>
 </html> 
